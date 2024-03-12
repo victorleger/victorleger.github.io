@@ -1,1 +1,86 @@
-Hello World
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>Victor Léger</title>
+</head>
+
+<body>
+
+<h1>Victor Léger</h1>
+
+<hr />
+
+<div class="container" style="overflow: hidden">
+<!-- <div class="image" style="float: left; margin-right: 10px"><img src="me_200x150.jpg" alt="Hugo Lebeau" /></div> -->
+<div class="text"><b>Ph.D. student, Université Grenoble Alpes</b><br />
+<table style="text-align: center">
+<tbody>
+<tr><td><a href="https://www.liglab.fr/">LIG</a></td><td>&emsp;</td><td><a href="https://team.inria.fr/polaris/">POLARIS</a></td></tr>
+</tbody>
+</table>
+<br />
+<b>Office</b>: LIG 418<br />
+<b>Tel</b>: +33 4 57 42 16 62<br />
+<b>Mail</b>: <a href="mailto:victor.leger@univ-grenoble-alpes.fr">victor.leger@univ-grenoble-alpes.fr</a><br />
+<br />
+<a href="https://scholar.google.com/citations?user=J7YkV5QAAAAJ">Google Scholar</a> &ensp; <a href="https://gricad-gitlab.univ-grenoble-alpes.fr/legervi">GitLab</a> &ensp;
+</div>
+
+<script>
+var countDownDate = new Date("October 1, 2024 00:00:00").getTime();
+var x = setInterval(function(){
+	var now = new Date().getTime();
+	var distance = countDownDate - now;
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	document.getElementById("countdown").innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds &#9203;";
+	if (distance < 0) {
+		clearInterval(x);
+		document.getElementById("countdown").innerHTML = "EXPIRED &#8987;";
+	}
+}, 1000);
+</script>
+
+<p><b>Ph.D. start</b>: October 2021 &emsp; <b>Expected end</b>: October 2024 &emsp; <b>Remaining time</b>: <span id="countdown"></span></p>
+
+<h2>Academic Background</h2>
+<ul>
+<li><b><a href="https://www.master-mva.com/">Master MVA</a></b> &ensp; Mathematics, Machine Learning, Computer Vision</li>
+<li><b><a href="https://ens-paris-saclay.fr/">ENS Paris-Saclay</a></b> &ensp; Mathematics Department </li>
+</ul>
+
+<!--
+<h2>Research topics</h2>
+High-Dimensional Statistics &emsp; Random Matrix Theory &emsp; Machine learning
+<ul>
+<li><b>Low-Rank Tensor Approximations</b> &ensp; Analysis of spiked tensor models with random matrix tools. </li>
+<li><b>Random Tensors and Clustering</b> &ensp; Theoretical study of complex clustering tasks (multi-view clustering, time-varying clusters).</li>
+<li><b>Data Stream Clustering</b> &ensp; Kernel spectral clustering under limited memory constraints.</li>
+</ul>
+-->
+
+<!--<h2>Publications</h2>
+<ul>
+<li><i>Submitted to</i> IEEE Signal Processing Letters &ndash; <b>Asymptotic Gaussian Fluctuations of Eigenvectors in Spectral Clustering</b>, Hugo Lebeau, Florent Chatelain, Romain Couillet [<a href="https://arxiv.org/abs/2402.12302">preprint</a>][<a href="https://github.com/HugoLebeau/asymptotic_fluctuations_spectral_clustering">code</a>]</li>
+<li><i>Submitted to</i> JMLR &ndash; <b>A Random Matrix Approach to Low-Multilinear-Rank Tensor Approximation</b>, Hugo Lebeau, Florent Chatelain, Romain Couillet [<a href="https://arxiv.org/abs/2402.03169">preprint</a>]</li>
+</ul>
+<ul>
+<li>ICLR 2024 &ndash; <b>Performance Gaps in Multi-view Clustering under the Nested Matrix-Tensor Model</b>, Hugo Lebeau, Mohamed El Amine Seddik, José Henrique De Morais Goulart [<a href="https://openreview.net/forum?id=ILqA09Oeq2">article</a>][<a href="https://github.com/HugoLebeau/nested_matrix-tensor">code</a>]</li>
+<li>GRETSI 2023 &ndash; <b>HOSVD Tronquée : Analyse d'une Approximation Tensorielle Rapide</b>, Hugo Lebeau, Romain Couillet, Florent Chatelain [<a href="https://gretsi.fr/data/colloque/pdf/2023_lebeau1060.pdf">article</a>]</li>
+<li>GRETSI 2022 &ndash; <b>Une analyse par matrices aléatoires du clustering en ligne : comprendre l’impact des limitations en mémoire</b>, Hugo Lebeau, Romain Couillet, Florent Chatelain [<a href="https://gretsi.fr/data/colloque/pdf/2022_lebeau757.pdf">article</a>]</li>
+<li>ICML 2022 &ndash; <b>A Random Matrix Analysis of Data Stream Clustering: Coping With Limited Memory Resources</b>, Hugo Lebeau, Romain Couillet, Florent Chatelain [<a href="https://proceedings.mlr.press/v162/lebeau22a.html">article</a>][<a href="https://github.com/HugoLebeau/online_learning">code</a>][<a href="https://slideslive.com/38983621">video</a>]</li>
+</ul>
+-->
+
+<!--<h2>Teaching</h2>
+<p>During my PhD, I take part in several courses as teaching assistant.</p>
+-->
+
+</body>
+
+</html>
